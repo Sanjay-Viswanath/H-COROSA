@@ -9,7 +9,7 @@ https://arxiv.org/abs/2105.12775
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%     
 
-How to use results available in folder 'MAT_Files',
+To use results available in folder 'MAT_Files',
 
 Tables: Run the scripts from folder 'Tables',
 
