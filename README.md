@@ -25,3 +25,4 @@ Scripts_View_And_Generate_Results:
 	Scripts to generate and view the results given in paper including 	SSIM/SNR scores, tables and figures.
 
 Note: MATLAB codes for generating results need CUDA support.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
