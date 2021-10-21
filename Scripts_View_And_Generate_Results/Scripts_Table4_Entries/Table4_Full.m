@@ -1,0 +1,39 @@
+clc; 
+clear all; 
+close all; 
+cd MRI_1 
+MRI_1_Spiral_SR_1_var_15_hcorosa_result 
+MRI_1_Spiral_SR_2_var_15_hcorosa_result 
+MRI_1_TSP_SR_1_var_15_hcorosa_result 
+MRI_1_Radial_SR_1_var_15_hcorosa_result 
+cd .. 
+cd MRI_2 
+MRI_2_Spiral_SR_1_var_15_hcorosa_result 
+MRI_2_Spiral_SR_2_var_15_hcorosa_result 
+MRI_2_TSP_SR_1_var_15_hcorosa_result 
+MRI_2_Radial_SR_1_var_15_hcorosa_result 
+cd .. 
+cd MRI_3 
+MRI_3_Spiral_SR_1_var_15_hcorosa_result 
+MRI_3_Spiral_SR_2_var_15_hcorosa_result 
+MRI_3_TSP_SR_1_var_15_hcorosa_result 
+MRI_3_Radial_SR_1_var_15_hcorosa_result 
+cd .. 
+cd MRI_8 
+MRI_8_Spiral_SR_1_var_15_hcorosa_result 
+MRI_8_Spiral_SR_2_var_15_hcorosa_result 
+MRI_8_TSP_SR_1_var_15_hcorosa_result 
+MRI_8_Radial_SR_1_var_15_hcorosa_result 
+cd .. 
+cd MRI_9 
+MRI_9_Spiral_SR_1_var_15_hcorosa_result 
+MRI_9_Spiral_SR_2_var_15_hcorosa_result 
+MRI_9_TSP_SR_1_var_15_hcorosa_result 
+MRI_9_Radial_SR_1_var_15_hcorosa_result 
+cd .. 
+cd MRI_10 
+MRI_10_Spiral_SR_1_var_15_hcorosa_result 
+MRI_10_Spiral_SR_2_var_15_hcorosa_result 
+MRI_10_TSP_SR_1_var_15_hcorosa_result 
+MRI_10_Radial_SR_1_var_15_hcorosa_result 
+cd .. 

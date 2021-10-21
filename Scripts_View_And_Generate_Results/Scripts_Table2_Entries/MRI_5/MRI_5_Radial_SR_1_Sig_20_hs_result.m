@@ -1,0 +1,64 @@
+
+cd .. 
+cd .. 
+cd .. 
+close all; 
+clear all; 
+
+% Setting Folder Paths 
+addpath(genpath('Compared_Methods')); 
+fold_in = fullfile('Models_and_Measurements','Measurements_for_Table2'); 
+fold_ref = fullfile('Models_and_Measurements','Reference_Models'); 
+fold_out = fullfile('Generated_Reconstruction_Results','Reconstructions_in_Table2'); 
+
+% Load Reference Image 
+load(fullfile(fold_ref,'MRI_5.mat'),'Im'); 
+% Load Measurement 
+load(fullfile(fold_in,'MRI_5_Radial_SR_1_Sig_20.mat'),'Imn','TF');
+disp('MRI_5_Radial_SR_1_Sig_20')
+
+tic;
+
+% HS Reconstruction 
+disp('HS Reconstruction')
+% Load Lambda 
+load(fullfile(fold_in,'Lambda_Table2.mat'),'Lambda_Table2');
+lhs_snr = Lambda_Table2(25,2); 
+lhs_ssim = Lambda_Table2(25,1); 
+NIter = 250; % Number of HS iterations 
+betaadmm = 1; % Parameter beta in ADMM  
+UB = 300; % Upperbound for image values, Effective bounding constraint is [0,UB] 
+noisetype = 1; % 1 for AWGN 
+lam = lhs_snr; % Lambda as tuning paramter for regularization, Tuned for SNR 
+[Irec, ~] = hs(TF, Imn, lam, betaadmm,  ...
+    NIter, UB, 1, noisetype);
+save(fullfile(fold_out,'MRI_5_Radial_SR_1_Sig_20_hs_best_snr.mat'),'Irec','lam'); 
+% Compute SNR 
+temp1 = Im(1:512,1:512); 
+temp2 = Irec(1:512,1:512); 
+sc1 = sum(temp1(:).*temp2(:))./sum(temp2(:).^2); 
+SNR_Score = round(10*log10(sum(temp1(:).^2)/sum((sc1*temp2(:) - temp1(:)).^2)),2); 
+Irec_SNR = Irec; 
+if lhs_snr ~= lhs_ssim 
+lam = lhs_ssim; % Lambda as tuning paramter for regularization, Tuned for SSIM 
+[Irec, ~] = hs(TF, Imn, lam, betaadmm,  ...
+    NIter, UB, 1, noisetype);
+end 
+save(fullfile(fold_out,'MRI_5_Radial_SR_1_Sig_20_hs_best_ssim.mat'),'Irec','lam'); 
+% Compute SSIM 
+temp1 = Im(1:512,1:512); 
+temp2 = Irec(1:512,1:512); 
+sc2 = sum(temp1(:).*temp2(:))./sum(temp2(:).^2); 
+SSIM_Score = round(real(ssim(sc2*temp2,temp1,'Exponents',[1,1,1],'DynamicRange',255)),3); 
+Irec_SSIM = Irec; 
+
+clearvars -except Irec_SNR Irec_SSIM SNR_Score SSIM_Score 
+toc; 
+
+% Display Reconstruction Scores 
+disp(sprintf('SNR=%.2f',SNR_Score)); 
+disp(sprintf('SSIM=%.3f',SSIM_Score)); 
+rmpath(genpath('Compared_Methods')) 
+cd 'Scripts_View_And_Generate_Results' 
+cd 'Scripts_Table2_Entries' 
+cd 'MRI_5' 
