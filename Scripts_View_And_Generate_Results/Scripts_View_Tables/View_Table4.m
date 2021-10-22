@@ -2,7 +2,7 @@
 % Sanjay Viswanath, Manu Ghulyani, Muthuvel Arigovindan,"Structurally Adaptive
 % Multi-Derivative Regularization for Image Recovery from Sparse Fourier Samples"
 % https://arxiv.org/abs/2105.12775
-% v2.0: Sanjay Viswanath, ISL, Dept. of EE, IISc, Bangalore
+% v2.0: Sanjay Viswanath, Muthuvel Arigovindan, Imaging Systems Lab, EE, IISc
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clc;

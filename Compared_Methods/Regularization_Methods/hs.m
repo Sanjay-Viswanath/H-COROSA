@@ -1,5 +1,5 @@
 % Hessian-Schatten Norm Regularization, HS
-% Imaging System Lab, EE, IISc
+% Sanjay Viswanath, Muthuvel Arigovindan, Imaging Systems Lab, EE, IISc
 %
 % Function Output
 % X: Restored Image by HS after full set of ADMM iterations

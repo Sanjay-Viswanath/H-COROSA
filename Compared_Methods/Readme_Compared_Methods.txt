@@ -1,4 +1,4 @@
-v2.0: Sanjay, Imaging Systems Lab, Dept. of EE, IISc, Bangalore
+v2.0: Sanjay Viswanath, Muthuvel Arigovindan, Imaging Systems Lab, EE, IISc
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Codes, MAT Files and Scripts for results presented in
@@ -16,8 +16,8 @@ proposed method.
 For details, see Readme files inside each folder.
 
 Note: 	MATLAB codes for regularization methods need CUDA support.
-      	MATLAB codes for regularization methods are general implementations and can be
-         used for other datasets.
-	Networks for deep learning methods are specifically meant for comparisons given
-         as we not have permission to redistribute as general methods.
+      	MATLAB codes for regularization methods are general implementations and 
+can be used for other datasets.
+	    Networks for deep learning methods are specifically meant for comparisons 
+given as we do not have permission to redistribute as general methods.
 

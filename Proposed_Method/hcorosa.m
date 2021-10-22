@@ -3,7 +3,7 @@
 % HCOROSA regularization, Implementation of "Structurally Adaptive 
 % Multi-Derivative Regularization for Image Recovery from Sparse 
 % Fourier Samples", arXiv preprint arXiv:2105.12775
-% Sanjay Viswanath, Imaging Systems Lab, EE, IISc
+% Sanjay Viswanath, Muthuvel Arigovindan, Imaging Systems Lab, EE, IISc
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % Function Output

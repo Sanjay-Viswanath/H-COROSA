@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % COROSA regularization, Implementation of "Image restoration by combined 
 % order regularization with optimal spatial adaptation", IEEE TIP 2020
-% Sanjay Viswanath, Imaging Systems Lab, EE, IISc
+% Sanjay Viswanath, Muthuvel Arigovindan, Imaging Systems Lab, EE, IISc
 %
 % Function Output
 % X: Dummy output from Multi-Resolution loop for initializing BCD iterations

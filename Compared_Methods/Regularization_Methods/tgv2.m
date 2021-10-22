@@ -1,5 +1,5 @@
 % Second Order Total Generalized Variation, TGV2 Smooth Version
-% Imaging System Lab, EE, IISc
+% Sanjay Viswanath, Muthuvel Arigovindan, Imaging Systems Lab, EE, IISc
 %
 % Function Output
 % X: Restored Image by TGV2 after full set of ADMM iterations

@@ -1,5 +1,5 @@
 # H-COROSA
-v2.0: Sanjay, Imaging Systems Lab, Dept. of EE, IISc, Bangalore
+v2.0: Sanjay Viswanath, Muthuvel Arigovindan, Imaging Systems Lab, EE, IISc
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Codes, MAT Files and Scripts for results presented in

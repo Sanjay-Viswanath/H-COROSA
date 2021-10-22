@@ -1,5 +1,5 @@
 % Second Order Total Variation, TV2
-% Imaging System Lab, EE, IISc
+% Sanjay Viswanath, Muthuvel Arigovindan, Imaging Systems Lab, EE, IISc
 %
 % Function Output
 % X: Restored Image by TV2 after full set of ADMM iterations
